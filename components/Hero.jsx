@@ -9,6 +9,7 @@ const Hero = () => {
   const imgScale = useTransform(scrollY, [0, 200, 1300], [1, 1.4, 1])
 
   const textOpacity = useTransform(scrollY, [0, 200], [1, 0]);
+  const textScale = useTransform(scrollY, [0, 200], [1, 0.8]);
 
   return (
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
@@ -17,6 +18,7 @@ const Hero = () => {
         <motion.div className='flex flex-col justify-center items-center 
         gap-6 text-center fixed left-0 right-0 mt-24 xl:mt-[160px]' style={{
           opacity: textOpacity,
+          scale: textScale,
         }}>
           <h1 className='text-[60px] font-bold tracking-[-0.5px] leading-none max-w-[800px]
            xl:max-w-max'>Boost Your Productivity Instantly</h1>
