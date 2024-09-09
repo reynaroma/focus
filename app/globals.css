@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply text-white
+  @apply text-white;
 }
 
 .h2 {
-  @apply text-5xl font-semibold
+  @apply text-5xl font-semibold;
+}
+
+.lead {
+  @apply text-lg font-light text-white/80;
 }
