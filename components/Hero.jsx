@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section>
+    <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
       <div className="container mx-auto h-full flex items-center xl:items-start">
         {/* text */}
         <div className='bg-pink-50/10 flex flex-col justify-center items-center 
