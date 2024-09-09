@@ -1,8 +1,10 @@
-import React from 'react'
+// components
+import Hero from "@/components/Hero";
 
 const Home = () => {
   return (
     <>
+    <Hero />
       {/* temporary div */}
       <div className='h-[8000px]'>
       </div>
