@@ -2,6 +2,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
+  
+  const { scrollY } = useScroll();
+  // scrollY is a value that starts from 0 and increases as the user scrolls down the page.
+  const imgTopPosition = useTransform(scrollY, [0, 400], ["480px", "240px"]);
+
   return (
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
       <div className="container mx-auto h-full flex items-center xl:items-start">
@@ -19,6 +24,7 @@ const Hero = () => {
             backgroundImage: "url('/hero/img.svg')",
             backgroundSize: "contain",
             backgroundPosition: "center",
+            top: imgTopPosition,
           }}></div>
       </div>
     </section>
