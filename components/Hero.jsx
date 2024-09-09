@@ -2,10 +2,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
-  
+
   const { scrollY } = useScroll();
   // scrollY is a value that starts from 0 and increases as the user scrolls down the page.
   const imgTopPosition = useTransform(scrollY, [0, 400], ["480px", "240px"]);
+  const imgScale = useTransform(scrollY, [0, 200, 1300], [1, 1.4, 1])
 
   return (
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
@@ -19,13 +20,14 @@ const Hero = () => {
            <button>Join today</button>
         </div>
         {/* img */}
-        <div className='hidden xl:flex w-full max-w-[960px] mx-auto h-[520px] bg-no-repeat sticky left-0 right-0'
+        <motion.div className='hidden xl:flex w-full max-w-[960px] mx-auto h-[520px] bg-no-repeat sticky left-0 right-0'
           style={{
             backgroundImage: "url('/hero/img.svg')",
             backgroundSize: "contain",
             backgroundPosition: "center",
             top: imgTopPosition,
-          }}></div>
+            scale: imgScale,
+          }}></motion.div>
       </div>
     </section>
   )
