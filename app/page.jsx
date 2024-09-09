@@ -2,9 +2,11 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='h-[8000px]'>
-
-    </div>
+    <>
+      {/* temporary div */}
+      <div className='h-[8000px]'>
+      </div>
+    </>
   )
 }
 
