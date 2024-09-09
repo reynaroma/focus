@@ -6,11 +6,11 @@ const Hero = () => {
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
       <div className="container mx-auto h-full flex items-center xl:items-start">
         {/* text */}
-        <div className='bg-pink-50/10 flex flex-col justify-center items-center 
+        <div className='flex flex-col justify-center items-center 
         gap-6 text-center fixed left-0 right-0 mt-24 xl:mt-[160px]'>
           <h1 className='text-[60px] font-bold tracking-[-0.5px] leading-none max-w-[800px]
            xl:max-w-max'>Boost Your Productivity Instantly</h1>
-           <p>Streamline tasks and manage your time effortlessly with our powerful, intuitive, all in one productivity platform.</p>
+           <p className='max-w-[680px] text-[20px] text-white/80 font-light px-8 xl:px-0 mb-2'>Streamline tasks and manage your time effortlessly with our powerful, intuitive, all in one productivity platform.</p>
            <button>Join today</button>
         </div>
         {/* img */}
