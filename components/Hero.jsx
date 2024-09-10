@@ -10,7 +10,7 @@ const Hero = () => {
 
   const textOpacity = useTransform(scrollY, [0, 200], [1, 0]);
   const textScale = useTransform(scrollY, [0, 200], [1, 0.8]);
-  const textDisplay = useTransform(scrollY, [0, 400], ["flex", "none"]);
+  const textDisplay = useTransform(scrollY, [0, 800], ["flex", "none"]);
 
   return (
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
