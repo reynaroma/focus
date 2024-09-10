@@ -1,6 +1,9 @@
 "use client";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+// components
+import Header from './Header';
+
 const Hero = () => {
 
   const { scrollY } = useScroll();
