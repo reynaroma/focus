@@ -20,6 +20,7 @@ const Hero = () => {
         gap-6 text-center fixed left-0 right-0 mt-24 xl:mt-[160px]' style={{
             opacity: textOpacity,
             scale: textScale,
+            display: textDisplay,
           }}>
           <h1 className='text-[60px] font-bold tracking-[-0.5px] leading-none max-w-[800px]
            xl:max-w-max'>Boost Your Productivity Instantly</h1>
