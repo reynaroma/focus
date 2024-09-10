@@ -14,6 +14,7 @@ const Hero = () => {
 
   return (
     <section className='h-screen xl:h-[1600px] overflow-x-clip relative'>
+      <Header />
       <div className="container mx-auto h-full flex items-center xl:items-start">
         {/* text */}
         <motion.div className='flex flex-col justify-center items-center 
