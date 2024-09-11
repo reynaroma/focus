@@ -29,7 +29,7 @@ const brandImages = [
 
 const Brands = () => {
   return (
-    <section>
+    <section className="w-full h-[24vh] pt-24 flex justify-center">
       <div className="container mx-auto overflow-hidden">
         <div className="flex">
           <motion.div
