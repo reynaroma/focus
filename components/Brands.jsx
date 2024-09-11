@@ -27,10 +27,17 @@ const brandImages = [
   },
 ];
 
-
 const Brands = () => {
   return (
-    <div>Brands</div>
+    <div>
+      <div>
+        {brandImages.map((brand, index) => {
+          return <div>
+            <Image src={brand.src} fill alt="" className="object-contain"/>
+          </div>
+        })}
+      </div>
+    </div>
   )
 }
 
