@@ -32,7 +32,7 @@ const Brands = () => {
     <div>
       <div>
         {brandImages.map((brand, index) => {
-          return <div>
+          return <div className="relative w-52 h-20 mr-12" key={index}>
             <Image src={brand.src} fill alt="" className="object-contain"/>
           </div>
         })}
