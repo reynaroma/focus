@@ -29,19 +29,35 @@ const brandImages = [
 
 const Brands = () => {
   return (
-    <div>
-      <motion.div
-        initial={{ x: 0 }}
-        animate={{ x: "-100%" }}
-        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="flex">
-        {brandImages.map((brand, index) => {
-          return <div className="relative w-52 h-20 mr-12" key={index}>
-            <Image src={brand.src} fill alt="" className="object-contain" />
-          </div>
-        })}
-      </motion.div>
-    </div>
+    <section>
+      <div></div>
+      <div className="flex">
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex">
+          {brandImages.map((brand, index) => {
+            return <div className="relative w-52 h-20 mr-12" key={index}>
+              <Image src={brand.src} fill alt="" className="object-contain" />
+            </div>
+          })}
+        </motion.div>
+        {/* duplicate div */}
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="flex">
+          {brandImages.map((brand, index) => {
+            return <div className="relative w-52 h-20 mr-12" key={index}>
+              <Image src={brand.src} fill alt="" className="object-contain" />
+            </div>
+          })}
+        </motion.div>
+      </div>
+
+    </section>
   )
 }
 
