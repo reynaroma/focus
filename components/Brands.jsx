@@ -37,6 +37,7 @@ const Brands = () => {
         variants={fadeInOnScroll(0.2, 0.6)}
         initial="hidden" whileInView="visible"
         className="container mx-auto overflow-hidden">
+          <p className="lead text-center mb-6">Join 200+ companies already growing</p>
         <div className="flex">
           <motion.div
             initial={{ x: 0 }}
