@@ -60,7 +60,7 @@ const Integrations = () => {
     <section className="py-24 xl:py-32 min-h-[720px] xl:mt-32">
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 xl:gap-16">
         {/* text */}
-        <div className="">
+        <div className="text-center">
           <h2 className="h2 mb-3">Unified Workflows</h2>
           <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
         </div>
