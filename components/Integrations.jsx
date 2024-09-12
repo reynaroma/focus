@@ -86,7 +86,7 @@ const Integrations = () => {
               custom={index}
               variants={iconAnimation}
               initial="initial"
-              animate="animate"
+              whileInView="animate"
               className="relative w-[80px] h-[80px]">
               <Image src={icon.src} alt="icon" fill />
             </motion.div>
