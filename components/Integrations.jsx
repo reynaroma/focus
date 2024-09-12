@@ -65,7 +65,7 @@ const Integrations = () => {
           <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
         </div>
         {/* icon list */}
-        <div className="">
+        <div className="flex flex-wrap gap-8 w-full max-w-[1024px] mx-auto place-content-center mb-8">
           {icons.map((icon, index) => (
             <div key={index} className="relative w-[80px] h-[80px]">
               <Image src={icon.src} alt="icon" fill />
