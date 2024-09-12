@@ -44,7 +44,11 @@ const Testimonial = () => {
         <div>text</div>
         {/* card list */}
         <div>
-          <div className="flex">
+          <motion.div
+            variants={fadeInOnScroll(0.2, 0.6)}
+            initial="hidden"
+            whileInView="visible"
+            className="flex">
             <motion.div
               initial={{ x: 0 }}
               animate={{ x: "-100%" }}
@@ -84,7 +88,7 @@ const Testimonial = () => {
                 <p className="text-xl">{item.name}</p>
               </div>
             ))}</motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
