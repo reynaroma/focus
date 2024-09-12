@@ -85,11 +85,15 @@ const Features = () => {
           <div className="flex-1 flex flex-col gap-24">
             {featuresData.map((feature, index) => {
               return (
-                <div key={index}
+                <motion.div key={index}
+                  onViewportEnter={() => setIndex(index)}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ amount: "all" }}
                   className="w-full h-auto xl:h-[480px] flex items-center">
                   <div className="w-[80vw] xl:w-auto mx-auto xl:mx-0">
-                    <h2>{feature.title}</h2>
-                    <p>{feature.description}</p>
+                    <h2 className="h2 mb-4">{feature.title}</h2>
+                    <p className="">{feature.description}</p>
                     {/* highlights */}
                     <div className="flex flex-col gap-5">
                       {feature.highlights.map((highlight, index) => {
@@ -102,7 +106,7 @@ const Features = () => {
                       })}
                     </div>
                   </div>
-                </div>)
+                </motion.div>)
             })}
           </div>
         </div>
