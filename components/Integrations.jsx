@@ -68,16 +68,22 @@ const iconAnimation = {
     },
   }),
 };
+import { fadeInOnScroll, fadeInUpSpring } from "@/motion/motionVariants";
 
 const Integrations = () => {
   return (
     <section className="py-24 xl:py-32 min-h-[720px] xl:mt-32">
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 xl:gap-16">
         {/* text */}
-        <div className="text-center">
+        <motion.div
+          className="text-center"
+          variants={fadeInOnScroll(0.2, 0.6)}
+          initial="hidden"
+          whileInView="visible"
+        >
           <h2 className="h2 mb-3">Unified Workflows</h2>
           <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
-        </div>
+        </motion.div>
         {/* icon list */}
         <div className="flex flex-wrap gap-8 w-full max-w-[1024px] mx-auto place-content-center mb-8">
           {icons.map((icon, index) => (
