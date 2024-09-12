@@ -84,6 +84,9 @@ const Integrations = () => {
             <motion.div
               key={index}
               custom={index}
+              variants={iconAnimation}
+              initial="initial"
+              animate="animate"
               className="relative w-[80px] h-[80px]">
               <Image src={icon.src} alt="icon" fill />
             </motion.div>
