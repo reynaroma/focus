@@ -8,6 +8,7 @@ import Integrations from "@/components/Integrations";
 
 // implement lenis smooth scroll
 import { ReactLenis } from 'lenis/dist/lenis-react';
+import Testimonial from "@/components/Testimonial";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Brands />
         <Features />
         <Integrations />
+        <Testimonial />
         {/* temporary div */}
         <div className='h-[8000px]'>
         </div>
