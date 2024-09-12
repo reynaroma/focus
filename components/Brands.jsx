@@ -27,10 +27,16 @@ const brandImages = [
   },
 ];
 
+// import motion variants
+import { fadeInOnScroll } from "@/motion/motionVariants";
+
 const Brands = () => {
   return (
-    <section className="w-full h-[24vh] pt-24 flex justify-center">
-      <div className="container mx-auto overflow-hidden">
+    <section className="w-full h-[24vh] pt-24 flex justify-center items-center">
+      <motion.div
+        variants={fadeInOnScroll(0.2, 0.6)}
+        initial="hidden" whileInView="visible"
+        className="container mx-auto overflow-hidden">
         <div className="flex">
           <motion.div
             initial={{ x: 0 }}
@@ -56,7 +62,7 @@ const Brands = () => {
             })}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
 
 
     </section>

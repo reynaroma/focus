@@ -1,7 +1,7 @@
 
 export const fadeInOnScroll = (delay, duration) => ({
   hidden: { opacity: 0 }, // initial state: fully transparent
-  visivle: {
+  visible: {
     opacity: 1, // fade in to full visible
     transition: {
       delay: delay, // small delay before starting the animation
@@ -14,7 +14,7 @@ export const fadeInOnScroll = (delay, duration) => ({
 
 export const fadeInUpSpring = (delay, duration) => ({
   hidden: { opacity: 0, y: 60, scale: 0.8 },
-  visivle: {
+  visible: {
     opacity: 1,
     scale: 1,
     transition: {
