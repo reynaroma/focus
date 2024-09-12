@@ -41,7 +41,10 @@ const Testimonial = () => {
     <section className="w-full xl:py-24 mb-24 xl:mb-32 flex justify-center items-center">
       <div className="overflow-hidden">
         {/* text */}
-        <div>text</div>
+        <div>
+          <h2>What People Are Saying</h2>
+          <p>Hear directly from those who have improved their efficiency and organization.</p>
+        </div>
         {/* card list */}
         <div>
           <motion.div
