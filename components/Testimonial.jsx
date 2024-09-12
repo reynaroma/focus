@@ -45,7 +45,11 @@ const Testimonial = () => {
         {/* card list */}
         <div>
           <div>
-
+            <div>{testimonial.map((item, index) => (
+              <div key={index}>
+                card
+              </div>
+            ))}</div>
           </div>
         </div>
       </div>
