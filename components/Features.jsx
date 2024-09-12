@@ -93,7 +93,7 @@ const Features = () => {
                   className="w-full h-auto xl:h-[480px] flex items-center">
                   <div className="w-[80vw] xl:w-auto mx-auto xl:mx-0">
                     <h2 className="h2 mb-4">{feature.title}</h2>
-                    <p className="">{feature.description}</p>
+                    <p className="lead mb-8">{feature.description}</p>
                     {/* highlights */}
                     <div className="flex flex-col gap-5">
                       {feature.highlights.map((highlight, index) => {
