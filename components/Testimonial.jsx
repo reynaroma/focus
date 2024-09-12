@@ -51,8 +51,8 @@ const Testimonial = () => {
                 className="relative w-[460px] h-[300px] bg-[#0e11354e] mr-12 rounded-2xl flex flex-col justify-center px-14"
               >
                 <BiSolidQuoteLeft className="text-accent mb-3 text-3xl" />
-                <p className="">{item.message}</p>
-                <p className="">{item.name}</p>
+                <p className="mb-4 text-lg text-white/80">{item.message}</p>
+                <p className="text-xl">{item.name}</p>
               </div>
             ))}</div>
           </div>
