@@ -39,13 +39,22 @@ const testimonial = [
 const Testimonial = () => {
   return (
     <section className="w-full xl:py-24 mb-24 xl:mb-32 flex justify-center items-center">
-      <div className="overflow-hideen">
+      <div className="overflow-hidden">
         {/* text */}
         <div>text</div>
         {/* card list */}
         <div>
           <div>
-            <div>{testimonial.map((item, index) => (
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{
+                duration: 30,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+              className="flex"
+            >{testimonial.map((item, index) => (
               <div
                 key={index}
                 className="relative w-[460px] h-[300px] bg-[#0e11354e] mr-12 rounded-2xl flex flex-col justify-center px-14"
@@ -54,7 +63,7 @@ const Testimonial = () => {
                 <p className="mb-4 text-lg text-white/80">{item.message}</p>
                 <p className="text-xl">{item.name}</p>
               </div>
-            ))}</div>
+            ))}</motion.div>
           </div>
         </div>
       </div>
