@@ -58,7 +58,7 @@ const icons = [
 const Integrations = () => {
   return (
     <section className="py-24 xl:py-32 min-h-[720px] xl:mt-32">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col justify-center items-center gap-8xl:gap-16">
         {/* text */}
         <div className="">text</div>
         {/* icon list */}
