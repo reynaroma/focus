@@ -49,6 +49,14 @@ const featuresData = [
 ]
 
 const Features = () => {
+
+  const [index, setIndex] = useState(0);
+  const [imgIndex, setImgIndex] = useState(0);
+
+  useEffect(() => {
+    setImgIndex(index);
+  }, [index])
+
   return (
     <section className="text-white pt-32 relative">
       <div className="container mx-auto">
