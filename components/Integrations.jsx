@@ -61,8 +61,8 @@ const Integrations = () => {
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 xl:gap-16">
         {/* text */}
         <div className="">
-          <h2 className="">Unified Workflows</h2>
-          <p className="">Integrate with top apps to create a seamless, connected experience.</p>
+          <h2 className="h2 mb-3">Unified Workflows</h2>
+          <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
         </div>
         {/* icon list */}
         <div className="">icon</div>
