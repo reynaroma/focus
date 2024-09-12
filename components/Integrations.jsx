@@ -55,6 +55,20 @@ const icons = [
   },
 ]
 
+const iconAnimation = {
+  initial: {
+    opacity: 0,
+    y: 60,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: index * 0.05,
+    },
+  }),
+};
+
 const Integrations = () => {
   return (
     <section className="py-24 xl:py-32 min-h-[720px] xl:mt-32">
@@ -67,9 +81,12 @@ const Integrations = () => {
         {/* icon list */}
         <div className="flex flex-wrap gap-8 w-full max-w-[1024px] mx-auto place-content-center mb-8">
           {icons.map((icon, index) => (
-            <div key={index} className="relative w-[80px] h-[80px]">
+            <motion.div
+              key={index}
+              custom={index}
+              className="relative w-[80px] h-[80px]">
               <Image src={icon.src} alt="icon" fill />
-            </div>
+            </motion.div>
           ))}
         </div>
         {/* btn */}
