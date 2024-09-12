@@ -41,7 +41,13 @@ const Testimonial = () => {
     <section className="w-full xl:py-24 mb-24 xl:mb-32 flex justify-center items-center">
       <div className="overflow-hideen">
         {/* text */}
-        <div></div>
+        <div>text</div>
+        {/* card list */}
+        <div>
+          <div>
+
+          </div>
+        </div>
       </div>
     </section>
   )
