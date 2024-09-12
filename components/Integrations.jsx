@@ -45,7 +45,7 @@ const icons = [
     src: "/integrations/discord.svg",
   },
   {
-    src: "/integrations/bitbucked.svg",
+    src: "/integrations/bitbucket.svg",
   },
   {
     src: "/integrations/invision.svg",
@@ -65,7 +65,13 @@ const Integrations = () => {
           <p className="lead">Integrate with top apps to create a seamless, connected experience.</p>
         </div>
         {/* icon list */}
-        <div className="">icon</div>
+        <div className="">
+          {icons.map((icon, index) => (
+            <div key={index} className="relative w-[80px] h-[80px]">
+              <Image src={icon.src} alt="icon" fill />
+            </div>
+          ))}
+        </div>
         {/* btn */}
         <div>
           <Button btnText="See all" />
