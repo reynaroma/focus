@@ -99,9 +99,13 @@ const Integrations = () => {
           ))}
         </div>
         {/* btn */}
-        <div>
+        <motion.div
+          variants={fadeInUpSpring(0.4, 0.8)}
+          initial="hidden"
+          whileInView="visible"
+        >
           <Button btnText="See all" />
-        </div>
+        </motion.div>
       </div>
     </section>
   )

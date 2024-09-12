@@ -21,7 +21,7 @@ export const fadeInUpSpring = (delay, duration) => ({
       delay: delay,
       duration: duration,
       ease: [0.6, -0.05, 0.01, 0.99],
-      type: spring,
+      type: "spring",
       stiffness: 100,
     },
   },
