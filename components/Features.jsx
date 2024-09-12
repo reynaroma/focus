@@ -62,13 +62,31 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="flex gap-16">
           {/* img */}
-          <div>img</div>
+          <motion.div
+            key={featuresData[index].imgSrc}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.4,
+              ease: [0.6, -0.05, 0.01, 0.99],
+              delay: 0.2,
+            }}
+            className="hidden xl:flex justify-center flex-1 w-full h-[480px] sticky top-[calc(50%-240px)]"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src={featuresData[index].imgSrc}
+                alt=""
+                fill
+                className="h-full object-contain" />
+            </div>
+          </motion.div>
           {/* text */}
           <div className="flex-1 flex flex-col gap-24">
             {featuresData.map((feature, index) => {
               return (
                 <div key={index}
-                className="w-full h-auto xl:h-[480px] flex items-center">
+                  className="w-full h-auto xl:h-[480px] flex items-center">
                   <div className="w-[80vw] xl:w-auto mx-auto xl:mx-0">
                     <h2>{feature.title}</h2>
                     <p>{feature.description}</p>
