@@ -39,13 +39,13 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className='flex flex-col xl:flex-row items-center gap-12 xl:justify-between'>
           {/* socials */}
-          <div>socials</div>
+          <div className='flex-1'>socials</div>
           {/* logo */}
-          <div>
+          <div className='flex-1'>
             <Logo />
           </div>
           {/* copyright */}
-          <p>&copy; 2024 Focus. All rights reserved.</p>
+          <p className='flex-1'>&copy; 2024 Focus. All rights reserved.</p>
         </div>
       </div>
     </footer>
