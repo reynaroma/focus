@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { fadeInUpSpring } from "@/motion/motionVariants";
 import Button from "./Button";
+
+// components
 import ButtonTertiary from "./ButtonTertiary";
 
 const Trial = () => {
