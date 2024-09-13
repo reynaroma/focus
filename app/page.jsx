@@ -24,8 +24,7 @@ const Home = () => {
         <Trial />
         <Footer />
         {/* temporary div */}
-        <div className='h-[8000px]'>
-        </div>
+        {/* <div className='h-[8000px]'></div> */}
       </ReactLenis>
 
     </>
