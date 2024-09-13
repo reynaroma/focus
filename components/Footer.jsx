@@ -1,6 +1,10 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from './Logo';
+
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>Footer</footer>
   )
 }
 
