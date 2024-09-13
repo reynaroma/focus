@@ -37,7 +37,7 @@ const Footer = () => {
   return (
     <footer className='bg-[#10112f] py-24'>
       <div className="container mx-auto">
-        <div>
+        <div className='flex flex-col xl:flex-row items-center gap-12 xl:justify-between'>
           {/* socials */}
           <div>socials</div>
           {/* logo */}
