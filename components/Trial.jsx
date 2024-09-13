@@ -9,9 +9,9 @@ const Trial = () => {
         <div>
           <div>
             {/* text */}
-            <div>
-              <h2 className="">Start your 30-day free trial</h2>
-              <p>Experience the full power of our platform with a 30-day free trial. No credit card required.</p>
+            <div className="text-center mb-12 xl:mb-0 xl:text-left">
+              <h2 className="text-[40px] leading-tight font-bold mb-2">Start your 30-day free trial</h2>
+              <p className="lead max-w-[400px] xl:max-w-[560px] mx-auto xl:mx-0">Experience the full power of our platform with a 30-day free trial. No credit card required.</p>
             </div>
           </div>
         </div>
