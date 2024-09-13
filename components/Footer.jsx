@@ -39,7 +39,15 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className='flex flex-col xl:flex-row items-center gap-12 xl:justify-between'>
           {/* socials */}
-          <div className='flex-1'>socials</div>
+          <div className='flex-1 flex gap-8'>
+            {icons.map((icon, index) => (
+              <Link href={icon.href} key={index}>
+                <div className='relative w-6 h-6'>
+                  <Image src={icon.src} alt='icons' fill className='object-contain' />
+                </div>
+              </Link>
+            ))}
+          </div>
           {/* logo */}
           <div className='flex-1'>
             <Logo />
