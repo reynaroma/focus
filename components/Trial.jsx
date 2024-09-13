@@ -20,7 +20,7 @@ const Trial = () => {
           </div>
           {/* btn */}
           <div>
-            <ButtonTertiary />
+            <ButtonTertiary btnText="Get started" />
           </div>
         </div>
       </div>
