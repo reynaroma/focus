@@ -35,7 +35,18 @@ const icons = [
 
 const Footer = () => {
   return (
-    <footer>Footer</footer>
+    <footer className='bg-[#10112f] py-24'>
+      <div className="container mx-auto">
+        <div>
+          {/* socials */}
+          <div>socials</div>
+          {/* logo */}
+          <Logo />
+          {/* copyright */}
+          <p>&copy; 2024 Focus. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   )
 }
 
