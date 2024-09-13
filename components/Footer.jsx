@@ -49,11 +49,11 @@ const Footer = () => {
             ))}
           </div>
           {/* logo */}
-          <div className='flex-1'>
+          <div className='flex-1 flex justify-center'>
             <Logo />
           </div>
           {/* copyright */}
-          <p className='flex-1'>&copy; 2024 Focus. All rights reserved.</p>
+          <p className='flex-1 flex justify-end font-light'>&copy; 2024 Focus. All rights reserved.</p>
         </div>
       </div>
     </footer>
