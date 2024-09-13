@@ -101,7 +101,7 @@ const Integrations = () => {
         {/* btn */}
         <motion.div
           initial={{ y: 60, opacity: 0, scale: 0.8 }}
-          whileInView={{y: 0, opacity: 1, scale: 1}}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{
             delay: 0.6,
             duration: 0.4,
