@@ -7,7 +7,7 @@ import { FaRegCheckCircle } from 'react-icons/fa';
 
 const featuresData = [
   {
-    imgSrc: "/Features/img-1.svg",
+    imgSrc: "/features/img-1.svg",
     title: "Smart Task Management",
     description: "Organize and prioritize tasks effortlessly.",
     highlights: [
@@ -17,7 +17,7 @@ const featuresData = [
     ],
   },
   {
-    imgSrc: "/Features/img-2.svg",
+    imgSrc: "/features/img-2.svg",
     title: "Real-Time Collaboration",
     description: "Collaborate with you team in real-time.",
     highlights: [
@@ -27,7 +27,7 @@ const featuresData = [
     ],
   },
   {
-    imgSrc: "/Features/img-3.svg",
+    imgSrc: "/features/img-3.svg",
     title: "Advanced Analytics",
     description: "Gain insights to boost your productivity.",
     highlights: [
@@ -37,7 +37,7 @@ const featuresData = [
     ],
   },
   {
-    imgSrc: "/Features/img-4.svg",
+    imgSrc: "/features/img-4.svg",
     title: "Customizabble Workspaces",
     description: "Personalize your workspace for maximum efficiency.",
     highlights: [
