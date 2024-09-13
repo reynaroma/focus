@@ -19,9 +19,7 @@ const Trial = () => {
             </div>
           </div>
           {/* btn */}
-          <div>
-            <ButtonTertiary btnText="Get started" />
-          </div>
+          <ButtonTertiary btnText="Get started" />
         </div>
       </div>
     </section>
