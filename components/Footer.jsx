@@ -41,7 +41,9 @@ const Footer = () => {
           {/* socials */}
           <div>socials</div>
           {/* logo */}
-          <Logo />
+          <div>
+            <Logo />
+          </div>
           {/* copyright */}
           <p>&copy; 2024 Focus. All rights reserved.</p>
         </div>
